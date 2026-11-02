@@ -1,17 +1,17 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: "./tests",
   fullyParallel: true,
-  reporter: [['html', {open: 'never'}]],
+  reporter: [["html", { open: "never" }]],
   use: {
-    baseURL: 'http://localhost:3000',
-    trace: 'on',
+    baseURL: "http://localhost:3000",
+    trace: "on",
   },
   projects: [
     {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      name: "firefox",
+      use: { ...devices["Desktop Firefox"] },
     },
   ],
 });
