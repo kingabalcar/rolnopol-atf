@@ -12,3 +12,8 @@ Use the [Conventional Commits](https://www.conventionalcommits.org/) format for 
 - Use `!` after the type or scope for a breaking change, and explain it in the body or a `BREAKING CHANGE:` footer.
 - Add a body when useful to explain the motivation or context. Use footers for breaking changes and issue references.
 - Keep each commit focused on a single logical change.
+
+# Commit Guidelines
+
+Never create a git commit without asking me first and receiving explicit approval. “Prepare commit” means prepare the changes for review, not commit them.
+Always wait for my confirmation before finalizing any commit.
