@@ -1,0 +1,25 @@
+{
+  "name": "rolnopol-atf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingabalcar/rolnopol-atf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kingabalcar/rolnopol-atf/issues"
+  },
+  "homepage": "https://github.com/kingabalcar/rolnopol-atf#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6"
+  }
+}
