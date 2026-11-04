@@ -17,3 +17,8 @@ Use the [Conventional Commits](https://www.conventionalcommits.org/) format for 
 
 Never create a git commit without asking me first and receiving explicit approval. “Prepare commit” means prepare the changes for review, not commit them.
 Always wait for my confirmation before finalizing any commit.
+
+# Test Tag Guidelines
+
+- When creating or updating tests, use the tags defined in [`TEST_PLAN.md`](../TEST_PLAN.md) and apply tags that match the behavior being tested.
+- Keep `TEST_PLAN.md` in sync with the test suite: update its scenarios and tag assignments whenever tests or supported test tags change. Do not introduce a new tag without documenting it there.
