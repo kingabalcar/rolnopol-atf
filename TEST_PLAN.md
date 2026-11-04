@@ -36,7 +36,9 @@ or updating tests. Use the tags as Playwright test tags (for example,
 `tag: ["@auth"]`) and filter cases with `npx playwright test --grep @auth`.
 Keep this plan synchronized with the test suite: update its scenarios and tag
 assignments whenever tests or supported tags change, and document new tags
-here before using them. The shared `@smoke` tag selects all cases in this plan.
+here before using them. The shared `@smoke` tag currently selects only the automated
+homepage, login-page, and registration-page display checks. The remaining steps
+and scenarios in this plan are not yet automated.
 
 ## Completion criteria
 
