@@ -20,7 +20,7 @@ test.
 
 | ID    | Scenario                             | Tags                           | Steps                                                                                                                                                                                          | Expected result                                                                                                                                                           |
 | ----- | ------------------------------------ | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TP-01 | Public pages and API docs            | `@smoke`, `@public`            | Open the home page, `/docs.html`, and `/swagger.html`.                                                                                                                                         | Pages load and navigation links work; Swagger UI is available for API exploration.                                                                                        |
+| TP-01 | Public pages and API docs            | `@smoke`, `@public`            | Open the home page, `/docs.html`, and `/swagger.html`; verify each page's title, and confirm the Docs and Swagger pages return HTTP 200.                                                          | The home, Docs, and Swagger pages display their expected titles; Docs and Swagger return HTTP 200, and Swagger UI is available for API exploration.                       |
 | TP-02 | Register, log in, and log out        | `@smoke`, `@auth`              | Open `/login.html` and `/register.html` and confirm each page and its form are visible. Then register with a unique email, confirm the user is signed in, log out, then log in again. Try a login with an invalid password. | Both authentication pages load successfully with visible forms; registration and valid login succeed; logout ends the session; invalid login shows an error without signing in. |
 | TP-03 | Farm setup and resource management   | `@smoke`, `@farm`              | As a farmer, add a field, animal, staff member, and staff-to-field assignment. Review the farm dashboard, then edit or remove a test resource.                                                 | Changes are saved and reflected in the farm data; the assignment links the intended staff member and field.                                                               |
 | TP-04 | Role-based access                    | `@smoke`, `@access-control`    | Sign in as a farmer and attempt to access an admin-only view or action. Repeat with the appropriate documented admin role, if available.                                                       | Farmers can manage their own farm but cannot access admin/superadmin capabilities; authorized roles can access their permitted functions.                                 |
@@ -36,9 +36,10 @@ or updating tests. Use the tags as Playwright test tags (for example,
 `tag: ["@auth"]`) and filter cases with `npx playwright test --grep @auth`.
 Keep this plan synchronized with the test suite: update its scenarios and tag
 assignments whenever tests or supported tags change, and document new tags
-here before using them. The shared `@smoke` tag currently selects only the automated
-homepage, login-page, and registration-page display checks. The remaining steps
-and scenarios in this plan are not yet automated.
+here before using them. The shared `@smoke` tag currently selects automated
+display checks for the homepage, login page, registration page, Docs page, and
+Swagger page. The remaining steps and scenarios in this plan are not yet
+automated.
 
 ## Completion criteria
 
