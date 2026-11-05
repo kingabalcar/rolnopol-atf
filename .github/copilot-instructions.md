@@ -17,6 +17,7 @@ Use the [Conventional Commits](https://www.conventionalcommits.org/) format for 
 
 Never create a git commit without asking me first and receiving explicit approval. “Prepare commit” means prepare the changes for review, not commit them.
 Always wait for my confirmation before finalizing any commit.
+Whenever preparing a commit, state the proposed commit message and clearly say whether the commit was created or is only prepared.
 
 # Test Tag Guidelines
 
