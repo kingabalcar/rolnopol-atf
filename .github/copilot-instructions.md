@@ -25,3 +25,8 @@ Whenever preparing a commit, state the proposed commit message and clearly say w
 - When creating tests, review [`playwright.config.ts`](../playwright.config.ts) and follow its test directory, timeout, reporter, browser project, and other test settings.
 - When creating or updating tests, use the tags defined in [`TEST_PLAN.md`](../TEST_PLAN.md) and apply tags that match the behavior being tested.
 - Keep `TEST_PLAN.md` in sync with the test suite: update its scenarios and tag assignments whenever tests or supported test tags change. Do not introduce a new tag without documenting it there.
+
+# Test Locator Guidelines
+
+- Prefer stable `data-testid` attributes and Playwright's `getByTestId()` locator when selecting elements in tests.
+- Reuse existing test IDs; when a needed element has no test ID, add a descriptive `data-testid` rather than relying on brittle CSS or DOM-structure selectors.
